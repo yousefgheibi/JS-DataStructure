@@ -182,4 +182,13 @@ class LinkedList {
         console.log(str);
     }
 
+    search(head, x) {
+        var current = head; // Initialize current
+        while (current != null) {
+            if (current.data == x)
+                return true; // data found
+            current = current.next;
+        }
+        return false; // data not found
+    }
 }
