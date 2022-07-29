@@ -191,4 +191,17 @@ class LinkedList {
         }
         return false; // data not found
     }
+
+    printReverse() {
+        var head = this.head;
+        if (head == null)
+            return;
+
+        // print list of head node
+        printReverse(head.next);
+
+        // After everything else is printed
+        console.log(head.element + " ");
+    }
+
 }
